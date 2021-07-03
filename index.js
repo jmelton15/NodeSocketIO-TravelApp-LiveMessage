@@ -59,7 +59,7 @@ io.on("connection",(socket) => {
     /******************************/
     
     /**** WHEN USER SENDS MESSAGE ****/
-    socket.on("sendMessage",({fromUserId,toUserId,msgTxt}) => {
+    socket.on("sendMessage",({fromUserId,toUserId,msgTxt,fromUserAvatar}) => {
         console.log(connectedUsers);
         console.log(`toUserId: ${toUserId}`)
         console.log(`fromUserId: ${fromUserId}`)
@@ -68,7 +68,8 @@ io.on("connection",(socket) => {
         io.to(toSocketId).emit("getMessage", {
             toUserId,
             fromUserId,
-            msgTxt
+            msgTxt,
+            fromUserAvatar
         })
     })
     /******************************/
