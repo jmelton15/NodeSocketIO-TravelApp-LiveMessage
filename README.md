@@ -23,6 +23,8 @@
 
 This is the live messaging Node.js, Socket.io Web-socket portion of the project.
 This service handles connecting users and disconnecting users as well as creating direct messaging connections between two users
+The detailed explanation of the application can be found at the link below: 
+* [app details](https://github.com/jmelton15/React-TravelApp-Frontend)
 
 ### Future Plans
 1.) Add group messaging 
